@@ -8,7 +8,7 @@ export default function DashboardLayout({
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* 顶部导航栏 */}
-      <nav className="bg-white dark:bg-gray-800 shadow-sm border-b" style={{ position: 'sticky', top: 0 }}>
+      <nav className="bg-white dark:bg-gray-800 shadow-sm border-b sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
@@ -28,9 +28,9 @@ export default function DashboardLayout({
         </div>
       </nav>
 
-      <div className="flex" style={{ height: 'calc(100vh - 70px)', overflow: 'hidden' }}>
+      <div className="flex h-[calc(100vh-4rem)] overflow-hidden">
         {/* 侧边栏 */}
-        <aside className="w-64 bg-white dark:bg-gray-800 shadow-sm min-h-screen">
+        <aside className="w-64 bg-white dark:bg-gray-800 shadow-sm">
           <div className="p-4">
             <nav className="space-y-2">
               <Link
@@ -62,7 +62,7 @@ export default function DashboardLayout({
         </aside>
 
         {/* 主内容区域 */}
-        <main className="flex-1 p-8" style={{ maxHeight: '100%', overflow: 'auto' }}>
+        <main className="flex-1 p-8 overflow-auto">
           <div className="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-lg mb-6">
             <h2 className="text-xl font-semibold mb-3">路由类型：布局路由</h2>
             <p className="text-gray-700 dark:text-gray-300">
