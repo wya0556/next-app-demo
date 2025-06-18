@@ -28,7 +28,7 @@ export default function DashboardLayout({
         </div>
       </nav>
 
-      <div className="flex h-[calc(100vh-4rem)] overflow-hidden">
+      <div className="flex h-[calc(100vh-5rem)] overflow-hidden">
         {/* 侧边栏 */}
         <aside className="w-64 bg-white dark:bg-gray-800 shadow-sm">
           <div className="p-4">
